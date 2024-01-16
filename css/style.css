@@ -6,9 +6,13 @@
 .navbar{
     position: fixed;
     width: 100%;
-    /* background:#fff; */
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    background:#fff; 
+    padding: 15px 0;
 }
 .navbar .max-width{
     display: flex;
@@ -16,12 +20,12 @@
     justify-content: space-between;
 }
 .navbar .logo a{
-    color:#ffffff;
+    color:#950740;
     font-size: 35px;
     font-weight: 500;
 }
 .navbar .logo a span{
-    color:#FF4500;
+    color:#4e4e50;
     font-size: 35px;
     font-weight: 500;
 }
@@ -30,7 +34,7 @@
     display: inline-block;
 }
 .navbar .menu li a{
-    color: #FF4500;
+    color: #c3073f;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -39,9 +43,12 @@
 .navbar .menu li a:hover{
     color: #fff;
 }
+.navbar.sticky .menu li a:hover{
+    color: #1a1a1d;
+}
 .home{
     display: flex;
-    background:#242582;
+    background:#1a1a1d;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -64,6 +71,6 @@
     
 }
 .home .home-content .text-3 span{
-    color:#FF4500;
+    color:#950740;
     font-weight: ;
 }
