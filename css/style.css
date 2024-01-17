@@ -72,5 +72,12 @@
 }
 .home .home-content .text-3 span{
     color:#950740;
-    font-weight: ;
+    font-weight: 500;
+}
+
+.menu-btn{
+    color: #4e4e50;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
 }
