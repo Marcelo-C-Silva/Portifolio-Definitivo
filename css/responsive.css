@@ -3,6 +3,10 @@
         padding: 0 50px;
         
     }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
     .navbar .menu{
         position: fixed;
         width: 100%;
@@ -10,8 +14,12 @@
         left: 0;
         top: 0;
         background: #111;
-        padding-left: 80px;
+        padding-top: 80px;
         text-align: center;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
     }
     .navbar .menu li{
         display: block;
@@ -21,5 +29,19 @@
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+}
+@media(max-width: 690px){
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
     }
 }
