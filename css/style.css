@@ -116,6 +116,12 @@ section{
 .about{
     font-family: 'Roboto' sans-serif;
 }
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between ;
+}
 .about .title{
     font-family: 'Ubuntu' sans-serif;
     text-align: center;
@@ -148,8 +154,21 @@ section{
 }
 .about .about-content .left img{
     width: 400px;
-    height: 400px;
+    height: 456px;
+    border: #c3073f 2px solid;
+    border-radius: 10px;
     object-fit: cover;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 ::-webkit-scrollbar {
     width: 10px;
