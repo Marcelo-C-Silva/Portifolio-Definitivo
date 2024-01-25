@@ -113,16 +113,7 @@
 section{
     padding: 100px 0;
 }
-.about{
-    font-family: 'Roboto', sans-serif;
-}
-.about .about-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content:space-between ;
-}
-.about .title{
+section .title{
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     font-size: 40px;
@@ -131,7 +122,60 @@ section{
     padding-bottom: 20px;
     position: relative;
 }
-.about .title::before{
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom:-12px;
+    left: 50%;
+    font-size: 20px;
+    background: #fff;
+    color: #c3073f;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+.about, .services, .skills, .teams, .contact, footer{
+    font-family: 'Roboto', sans-serif;
+}
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section{
+    padding: 100px 0;
+}
+.about, .service{
+    font-family: 'Roboto', sans-serif;
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between ;
+}
+section .title{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+}
+section .title::before{
     content:"" ;
     position: absolute;
     bottom: 0;
@@ -141,8 +185,7 @@ section{
     background: #111;
     transform: translateX(-50%);
 }
-.about .title::after{
-    content:"Quem sou eu" ;
+section .title::after{
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -151,6 +194,9 @@ section{
     color: #c3073f;
     padding: 5px;
     transform: translateX(-50%);
+}
+.about .title::after{
+    content:"Quem sou eu";
 }
 .about .about-content .left img{
     width: 400px;
@@ -178,19 +224,62 @@ section{
 }
 .about .about-content .right a{
     display: inline-block;
-    background: #950740;
+    background: #c3073f;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #c3073f;
+    border: 2px solid #950740;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
     color: #950740;
     background: none;
+}
+.services, .teams{
+    background: #111;
+    color: #fff;
+}
+.services .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.services .title::after,
+.teams .title::after{
+    background: #111;
+    content: "Que oferecemos";
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+    background: #c3073f;
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card ion-icon{
+    font-size: 70px;
+    color: #c3073f;
+}
+.services .serv-content .card:hover ion-icon{
+    color: #fff;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 ::-webkit-scrollbar {
     width: 10px;
